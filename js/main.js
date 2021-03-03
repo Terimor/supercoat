@@ -58,7 +58,7 @@ $(document).ready(function () {
 
     const widgetContainer = $('#bought-widget');
     const appearingDelaySec = 5;
-    const animationFrequency = 3;
+    const animationFrequency = 5;
 
     const widgetTexts = [
         {name: 'Vlad', amount: 3, time: '1 day ago'},
@@ -90,9 +90,9 @@ $(document).ready(function () {
         if(widgetContainer) {
             const card = widgetContainer.find('.bought-widget-card');
             if(card) {
-                card.removeClass('animated fadeIn')
-                card.addClass('fadeOut animated')
-                setTimeout(() => widgetContainer.html(renderWidget(widgetTexts[index])), 1000)
+                card.removeClass('animated fadeIn');
+                card.addClass('fadeOut animated');
+                setTimeout(() => widgetContainer.html(renderWidget(widgetTexts[index])), 1000);
             }
         }
     };
@@ -105,12 +105,12 @@ $(document).ready(function () {
             setInterval(() => {
 
                 runWidgetAnimation(index)
-                if(index + 1 > widgetTexts.length - 1) {
+                if (index + 1 > widgetTexts.length - 1) {
                     index = 0;
                 } else {
                     index++;
                 }
-            }, animationFrequency * 1000);
+            }, animationFrequency * 1000 + 300);
         }, appearingDelaySec * 1000);
     })();
 
