@@ -7,7 +7,7 @@
     <title>SuperCOAT</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="lib/slick/slick.css">
     <link rel="stylesheet" href="lib/slick/slick-theme.css">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/widget.css">
 </head>
 <body>
     <header>
@@ -231,7 +232,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-block revealOnScroll" data-animation="slideInLeft" data-timeout="500">
+                <div class="card-block revealOnScroll" data-animation="slideInLeft" data-timeout="150">
                     <img class="car-img" src="img/car2.png" alt="car">
                     <div class="card-content">
                         <div class="stars">★★★★★</div>
@@ -245,7 +246,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-block revealOnScroll" data-animation="slideInLeft" data-timeout="1000">
+                <div class="card-block revealOnScroll" data-animation="slideInLeft" data-timeout="300">
                     <img class="car-img" src="img/car3.png" alt="car">
                     <div class="card-content">
                         <div class="stars">★★★★★</div>
@@ -260,7 +261,7 @@
                 </div>
             </div>
             <div class="cards-wrapper cards-wrapper-mobile desctop-hidden">
-                <div class="card-block">
+                <div class="card-block revealOnScroll" data-animation="slideInLeft">
                     <div class="stars">★★★★★</div>
                     <div class="card-name">Erich Tanne, Sindelfingen</div>
                     <img class="car-img" src="img/car1.png" alt="car">
@@ -270,7 +271,7 @@
                         wie das Wasser einfach so an der Windschutzscheibe abtropft!
                     </p>
                 </div>
-                <div class="card-block">
+                <div class="card-block revealOnScroll" data-animation="slideInLeft" data-timeout="150">
                     <div class="stars">★★★★★</div>
                     <div class="card-name">Michael Lahm, Hannover</div>
                     <img class="car-img" src="img/car2.png" alt="car">
@@ -282,7 +283,7 @@
                         machen - Krätzer wische ich einfach weg...
                     </p>
                 </div>
-                <div class="card-block">
+                <div class="card-block revealOnScroll" data-animation="slideInLeft" data-timeout="300">
                     <div class="stars">★★★★★</div>
                     <div class="card-name">David Schwarzer, München</div>
                     <img class="car-img" src="img/car3.png" alt="car">
@@ -470,7 +471,7 @@
             </div>
         </div>
     </footer>
-
+    <div id="bought-widget"></div>
     <script src="lib/jquery/jquery-3.5.1.min.js"></script>
     
     <script src="lib/slick/slick.min.js"></script>
