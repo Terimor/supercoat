@@ -651,8 +651,8 @@ footer .wrapper a{
     }
 
     .main-section .wrapper .right-block{
-        max-width: 107%;
-        width: 107%;
+        max-width: 80%;
+        width: 80%;
     }
     .main-section .wrapper .left-block{
         width: 100%;
@@ -936,5 +936,10 @@ footer .wrapper a{
     }
     .seventh-section .wrapper-mobile .button-save{
         margin-right: 0;
+    }
+
+    .main-section .wrapper .right-block{
+        max-width: 100%;
+        width: 100%;
     }
 }

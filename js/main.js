@@ -37,7 +37,19 @@ $(document).ready(function () {
             $(inputChekbox[i]).parent().css("background-color","#FFC439")
         }
     }
-    
+
+    $(".checkbox").on("change", function(){
+        $this = $(this);
+        
+        if(this.checked){
+            $this.parent().css("background-color","#FFC439")
+            console.log(this)
+        }
+        else{
+            $this.parent().css("background-color","white")
+        }
+    });
+
     $(".button-link").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".seventh-section").offset().top
