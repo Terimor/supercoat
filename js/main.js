@@ -30,6 +30,12 @@ $(document).ready(function () {
         });
     });
 
+    $(".button-link").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".seventh-section").offset().top
+        }, 2000);
+    });
+
     /*
     ************* Bought widget *************
     */
