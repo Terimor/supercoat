@@ -33,22 +33,24 @@ $(document).ready(function () {
     let inputChekbox = $(".checkbox");
     for (let i = 0; i <= inputChekbox.length; i++){
         if($(inputChekbox[i]).attr("checked") == 'checked'){
-            console.log($(inputChekbox[i]).parent())
             $(inputChekbox[i]).parent().css("background-color","#FFC439")
         }
     }
 
-    $(".checkbox").on("change", function(){
-        $this = $(this);
-        
-        if(this.checked){
-            $this.parent().css("background-color","#FFC439")
-            console.log(this)
-        }
-        else{
-            $this.parent().css("background-color","white")
+    $(".card-bottle-mobile").on("click", function(){
+        let checkbox = $(this).find(".checkbox")[0]
+        let $this = $(this);
+
+        if(checkbox.checked){
+            $this.css("background-color","white")
+            $(this).find(".checkbox")[0].checked = false;
+        }else{
+            $this.css("background-color","#FFC439")
+            $(this).find(".checkbox")[0].checked = true;
         }
     });
+
+    
 
     $(".button-link").click(function() {
         $([document.documentElement, document.body]).animate({
