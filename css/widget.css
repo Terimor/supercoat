@@ -1,0 +1,15 @@
+.bought-widget-card {
+    display: inline;
+    -webkit-box-shadow: 3px 3px 26px 1px rgb(0 0 0 / 33%);
+    -moz-box-shadow: 3px 3px 26px 1px rgba(0,0,0,0.33);
+    box-shadow: 3px 3px 26px 1px rgb(0 0 0 / 33%);
+    background: #fff;
+    color: #616161;
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    z-index: 999999;
+    min-height: auto;
+    border-radius: 8px;
+    transition: all 2s ease;
+}

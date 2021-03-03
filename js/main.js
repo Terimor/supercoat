@@ -29,4 +29,31 @@ $(document).ready(function () {
             }
         });
     });
+
+    const widgetContainer = $('#bought-widget');
+    const appearingDelaySec = 5;
+    const widgetTexts = [
+        {name: 'Vladyslav', amount: 3, time: '1 day ago'},
+        {name: 'Ricardo', amount: 5, time: '2 day ago'}
+        ];
+
+    const renderWidget = ({name, amount}) => {
+        return `<a class="bought-widget-card">
+                    <div class="bought-widget-card__image">
+                        <img src="img/bottle.png" />                    
+                    </div>
+                     <div class="bought-widget-card__text">
+                        <div class="text__name">${name}</div>
+                          <span>Bought</span>
+                          <span class="text__amount">${amount}</span>
+                          <span>superCoat</span>
+                     </div>
+                </a>`;
+    }
+
+    setTimeout(() => {
+        console.log(widgetContainer)
+        widgetContainer.html(renderWidget(widgetTexts[0]));
+    }, appearingDelaySec * 1);
+
 });
