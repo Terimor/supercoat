@@ -29,4 +29,13 @@ $(document).ready(function () {
             }
         });
     });
+
+    let inputChekbox = $(".checkbox");
+    for (let i = 0; i <= inputChekbox.length; i++){
+        if($(inputChekbox[i]).attr("checked") == 'checked'){
+            console.log($(inputChekbox[i]).parent())
+            $(inputChekbox[i]).parent().css("background-color","#FFC439")
+        }
+    }
+    
 });

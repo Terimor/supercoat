@@ -598,6 +598,32 @@ footer .wrapper a{
     margin-top: 30px;
 }
 
+.img-garantirt img{
+    margin: 0 auto;
+}
+
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.checkbox + label {
+	position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url(../img/RectangleEmpty.png);
+}
+
+.checkbox:checked + label {
+	background: #9FD468;
+    background: url(../img/Rectangle.png);
+}
+
+
+
 
 
 @media screen and (max-width: 1200px){
@@ -734,9 +760,12 @@ footer .wrapper a{
         box-shadow: 0px 6px 11px rgba(136, 136, 136, 0.15);
         border-radius: 10px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-top: 10px;
+    }
+
+    .seventh-section  .card-bottle-mobile img{
+        margin-right: 10px;
     }
 
     .seventh-section .wrapper-mobile{
@@ -746,7 +775,7 @@ footer .wrapper a{
 
     .seventh-section .wrapper-mobile .card-bottle-mobile{
         position: relative;
-        padding: 10px;
+        padding: 10px 5px;
     }
 
     .seventh-section .wrapper-mobile .card-bottle-value,
@@ -755,7 +784,7 @@ footer .wrapper a{
         top: 0;
         right: 0;
         font-size: 11px;
-        padding: 3px 6px; 
+        padding: 1px 4px; 
         color: white;
         text-align: center;
         
@@ -821,8 +850,27 @@ footer .wrapper a{
         display:  flex;
         flex-direction: column;
         justify-content: flex-end;
+        position: absolute;
+        bottom: 12px;
+        right: 15px;
     }
-    
+
+    .seventh-section .wrapper-mobile .button-save-free{
+        font-size: 11px;
+    }
+
+
+    .seventh-section .img-garantirt{
+        width: 100%;
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-mobile:first-child .title-bottle{
+        margin-right: 0;
+    }
+
+    .button-sale{
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -864,5 +912,29 @@ footer .wrapper a{
     .fourth-section .layer{
         margin: 15px auto 0 ;
         width: 100%;
+    }
+
+    
+    .button-link h3 {
+        font-size: 14px;
+    }
+
+    .button-sale{
+        font-size: 13px
+    }
+
+    .seventh-section .wrapper-mobile{
+        width: 100%;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .seventh-section .wrapper-mobile .title-bottle{
+        margin-right: 35px;
+    }
+    .seventh-section .wrapper-mobile .button-save{
+        margin-right: 0;
     }
 }
