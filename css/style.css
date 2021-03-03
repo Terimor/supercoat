@@ -144,6 +144,10 @@ header img{
     background-color: var(--green-color);
 }
 
+.button-link:hover{
+    background-color: var(--dark-green-color);
+}
+
 .button-link a{
     color: white;  
 }
@@ -656,7 +660,8 @@ footer .wrapper a{
     }
     
     .fourth-section .layer{
-        margin: 15px 0 0 0 ;
+        margin: 15px auto 0 ;
+        width: 70%;
     }
 
     .fourth-section .wrapper .info{
@@ -669,7 +674,7 @@ footer .wrapper a{
 
     .fifth-section .cards-wrapper-mobile .car-img{
         margin-top: 12px;
-        width: 100%;
+        width: 60%;
         height: auto;
     }
 
@@ -680,7 +685,7 @@ footer .wrapper a{
     
 
     .fifth-section .button-link{
-        background-color: #19AF42;
+        background-color: var(--green-color);
         max-width: 100%;
     }
 
@@ -729,13 +734,93 @@ footer .wrapper a{
         box-shadow: 0px 6px 11px rgba(136, 136, 136, 0.15);
         border-radius: 10px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-top: 10px;
     }
 
     .seventh-section .wrapper-mobile{
+        width: 70%;
+        margin: auto;
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-mobile{
+        position: relative;
+        padding: 10px;
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-value,
+    .seventh-section .wrapper-mobile .card-bottle-seller{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 11px;
+        padding: 3px 6px; 
+        color: white;
+        text-align: center;
         
+    } 
+
+    .seventh-section .wrapper-mobile .card-bottle-value{
+        background-color: var(--dark-green-color);
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-seller{
+        background-color: var(--red-color);
+    }
+
+    .seventh-section .wrapper-mobile .title-bottle{
+        color: #333333;
+        font-size: 14px;
+        margin-right: 50px;
+    }
+
+    .seventh-section .wrapper-mobile .button-save{
+        font-size: 12px;
+        color: black;
+        margin-right: 50px;
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-block-price{
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 7px;
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-block-price{
+        color: #333333;
+        font-size: 10px
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-block-price span{
+        font-size: 15px;
+        color: 333333;
+        position: relative;
+        top: -3px;
+    }
+
+    .seventh-section .wrapper-mobile .old-price{
+        color: #DE1B1B;
+        font-size: 13px;
+        text-decoration-line: line-through;
+    }
+
+    .seventh-section .wrapper-mobile .now-price{
+        font-size: 12px;
+        
+    }
+
+    .seventh-section .wrapper-mobile .card-bottle-flex{
+        display: flex;
+        margin-top: 10px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .seventh-section .wrapper-mobile .price-card-bottle{
+        display:  flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     
 }
@@ -769,5 +854,15 @@ footer .wrapper a{
 
     .under-section h3{
         font-size: 14px;
+    }
+
+    .fifth-section .cards-wrapper-mobile .car-img{
+        
+        width: 100%;
+    }
+
+    .fourth-section .layer{
+        margin: 15px auto 0 ;
+        width: 100%;
     }
 }
