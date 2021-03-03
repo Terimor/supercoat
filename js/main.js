@@ -30,7 +30,6 @@ $(document).ready(function () {
         });
     });
 
-<<<<<<< HEAD
     let inputChekbox = $(".checkbox");
     for (let i = 0; i <= inputChekbox.length; i++){
         if($(inputChekbox[i]).attr("checked") == 'checked'){
@@ -39,16 +38,11 @@ $(document).ready(function () {
         }
     }
     
-=======
     $(".button-link").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".seventh-section").offset().top
         }, 2000);
-    });
-
-    /*
-    ************* Bought widget *************
-    */
+    });  
 
     const widgetContainer = $('#bought-widget');
     const appearingDelaySec = 5;
@@ -108,5 +102,4 @@ $(document).ready(function () {
         }, appearingDelaySec * 1000);
     })();
 
->>>>>>> 832fcdecc7a204666503de3524ffb28f8d42ddda
 });
