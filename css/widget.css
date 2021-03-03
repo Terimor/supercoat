@@ -1,5 +1,5 @@
 .bought-widget-card {
-    display: inline;
+    display: flex;
     -webkit-box-shadow: 3px 3px 26px 1px rgb(0 0 0 / 33%);
     -moz-box-shadow: 3px 3px 26px 1px rgba(0,0,0,0.33);
     box-shadow: 3px 3px 26px 1px rgb(0 0 0 / 33%);
@@ -10,6 +10,31 @@
     bottom: 25px;
     z-index: 999999;
     min-height: auto;
-    border-radius: 8px;
+    border-radius: 24px;
+    padding: 18px;
     transition: all 2s ease;
+}
+
+.bought-widget-card .bought-widget-card__image {
+    flex-shrink: 0;
+}
+.bought-widget-card .bought-widget-card__image > img {
+    max-height: 60px;
+}
+
+.bought-widget-card .bought-widget-card__text {
+    margin-left: 18px;
+    font-size: 14px;
+}
+.bought-widget-card .bought-widget-card__text .text__message {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.bought-widget-card .bought-widget-card__text .text__name {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.bought-widget-card .bought-widget-card__text .text__time {
+  color: #909090;
+    font-size: 12px;
 }
