@@ -3,9 +3,8 @@ const win_height_padded = $(window).height() * 0.8;
 $(document).ready(function () {
     $('.slider').slick({
         dots: true,
+		autoplay: false,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 4000,
     });
 
     $(window).scroll(function () {
@@ -31,12 +30,12 @@ $(document).ready(function () {
     });
 
     let inputChekbox = $(".checkbox");
-    for (let i = 0; i <= inputChekbox.length; i++){
+    for (let i = 0; i < inputChekbox.length; i++){
         if($(inputChekbox[i]).attr("checked") == 'checked'){
             $(inputChekbox[i]).parent().css("background-color","#FFC439")
         }
     }
-
+    
     $(".card-bottle-mobile").on("click", function(){
         let checkbox = $(this).find(".checkbox")[0]
         let $this = $(this);
@@ -59,20 +58,20 @@ $(document).ready(function () {
     });  
 
     const widgetContainer = $('#bought-widget');
-    const appearingDelaySec = 5;
+    const appearingDelaySec = 30;
     const animationFrequency = 5;
 
     const widgetTexts = [
-        {name: 'Vlad', amount: 3, time: '1 day ago'},
-        {name: 'Alex', amount: 5, time: '2 day ago'},
-        {name: 'Emma', amount: 8, time: '3 day ago'},
-        {name: 'Tony', amount: 8, time: '3 day ago'},
-        {name: 'Bill', amount: 8, time: '1 hour ago'},
-        {name: 'Jack', amount: 8, time: '3 day ago'},
-        {name: 'Sonya', amount: 8, time: '3 day ago'},
-        {name: 'Bob', amount: 8, time: '5 day ago'},
-        {name: 'Jose', amount: 8, time: '3 day ago'},
-        {name: 'Anna', amount: 8, time: '3 day ago'},
+        {name: 'Vlad', amount: 3, time: 'vor 1 Minute'},
+        {name: 'Alex', amount: 5, time: 'vor 6 Minuten'},
+        {name: 'Emma', amount: 8, time: 'vor 1 Stunde'},
+        {name: 'Tanja', amount: 8, time: 'vor 17 Minuten'},
+        {name: 'Benjamin', amount: 8, time: 'vor 23 Minuten'},
+        {name: 'Erwin', amount: 8, time: 'vor 25 Minuten'},
+        {name: 'Sandro', amount: 8, time: 'vor 27 Minuten'},
+        {name: 'Andreas', amount: 8, time: 'vor 32 Minuten'},
+        {name: 'Johannes', amount: 8, time: 'vor 1 Stunde'},
+        {name: 'Anna', amount: 8, time: 'vor 20 Minuten'},
         ];
 
     const renderWidget = ({name, amount, time}) => {
@@ -82,7 +81,7 @@ $(document).ready(function () {
                     </div>
                      <div class="bought-widget-card__text">
                         <div class="text__name">${name}</div>
-                          <div class="text__message">bought ${amount} superCOAT </div>
+                          <div class="text__message">kaufte gerade ${amount} SuperCoat </div>
                            <div class="text__time">${time}</div>
                      </div>
                 </a>`;

@@ -57,7 +57,7 @@ a{
 }
 
 .p-19{
-    font-size: 19px;
+    font-size: 16px;
 }
 
 header{
@@ -81,11 +81,11 @@ header img{
 }
 
 .main-section .green-line{
-    margin: 20px 0 ;
+    margin: 20px auto;
 }
 
 .main-section .wrapper{
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,11 +116,11 @@ header img{
 }
 
 .main-section .quality{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .main-section .quality > div{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .main-section .quality img{
@@ -140,8 +140,9 @@ header img{
     cursor: pointer;
     text-align: center;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     background-color: var(--green-color);
+	font-size: 18px;
 }
 
 .button-link:hover{
@@ -254,7 +255,6 @@ header img{
 
 .third-section .wrapper{
     align-items: center;
-    margin-top: 40px;
     color: #494949;
 }
 
@@ -414,6 +414,7 @@ header img{
 
 .sixth-section .info-coating{
     margin-left: 25px;
+    max-width: 600px;
 }
 
 .sixth-section .row-position{
@@ -516,7 +517,7 @@ header img{
 .seventh-section .card-bottle .old-price{
     text-decoration: line-through;
     color: var(--dark-red-color);
-    font-size: 13px;
+    font-size: 14px;
     
 }
 
@@ -529,7 +530,7 @@ header img{
 }
 
 .seventh-section .card-bottle .price-card-bottle{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .seventh-section .card-bottle .button-save{
@@ -548,7 +549,7 @@ header img{
 }
 
 .seventh-section .card-bottle .guarantee-card-bottle{
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 5px;
 }
 
@@ -601,6 +602,7 @@ footer .wrapper a{
 
 .img-garantirt img{
     margin: 0 auto;
+	max-width: 70%;
 }
 
 
@@ -630,12 +632,33 @@ footer .wrapper a{
     transform: scale(1.02);
 }
 
+.seventh-section .card-bottle .title-bottle,.now-price,.button-save,.price-card-bottle{
+    color: black;
+}
+
+.seventh-section .card-bottle .button-buy,.button-best{
+    color: white;
+    text-transform: uppercase;
+}
+
 
 
 @media screen and (max-width: 1200px){
 
     .container{
         width: 90%;
+    }
+
+    .seventh-section .wrapper .price-card-bottle{
+        font-size: 12px;
+    }
+
+    .seventh-section  .wrapper .old-price{
+        font-size: 12px;
+    }
+
+    .seventh-section .wrapper .now-price{
+        font-size: 20px;
     }
 }
 
@@ -696,9 +719,9 @@ footer .wrapper a{
         width: 70%;
     }
 
-    .fourth-section .wrapper .info{
+    /*.fourth-section .wrapper .info{
         margin-top: 40px;
-    }
+    }*/
 
     .fifth-section .cards-wrapper-mobile .card-block{
         display: block;
@@ -706,7 +729,8 @@ footer .wrapper a{
 
     .fifth-section .cards-wrapper-mobile .car-img{
         margin-top: 12px;
-        width: 60%;
+        /*width: 60%;*/
+        width: 100%;
         height: auto;
     }
 
@@ -771,9 +795,24 @@ footer .wrapper a{
         margin-top: 10px;
     }
 
-    .seventh-section  .card-bottle-mobile img{
-        margin-right: 10px;
+    
+    .seventh-section  .img-bottle1{
+        width: 6%;
+        margin: 0 22px;
     }
+    .seventh-section  .img-bottle2{
+        width: 15%;
+        margin: 0 4px;
+    }
+    .seventh-section  .img-bottle3{
+        width: 13%;
+        margin: 0 9px;
+    }
+
+    .background-orange{
+        background-color: #FFC439;
+    }
+
 
     .seventh-section .wrapper-mobile{
         width: 70%;
@@ -904,7 +943,7 @@ footer .wrapper a{
     }
 
     h1{
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .under-section h3{
@@ -949,4 +988,35 @@ footer .wrapper a{
         max-width: 100%;
         width: 100%;
     }
+
+    .seventh-section .wrapper-mobile .card-bottle-mobile{
+        max-width: 300px;
+        margin: 15px auto 0;
+    }
+
+    .seventh-section .card-bottle-mobile-block{
+        width: 54%;
+    }
+
+    .seventh-section .img-bottle1{
+        width: 8%;
+        margin: 0 20px;
+    }
+    .seventh-section .img-bottle2{
+        width: 19%;
+        height: 50px;
+        margin: 0 6px;
+    }
+
+    .seventh-section .img-bottle3{
+        width: 18%;
+        margin: 0 6px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    /* .seventh-section .card-bottle-mobile-block{
+        width: 62%;
+    } */
 }
